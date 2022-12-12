@@ -1,0 +1,28 @@
+conversionFunctions As CanvasComponent:
+    celsiusToFahrenheit(myCelsius As Number):
+        myCelsius:
+            Default: =100
+        ThisProperty:
+            Default: =myCelsius * 9/5 + 32 
+    fahrenheitToCelsius(myFahrenheit As Number):
+        myFahrenheit:
+            Default: =100
+        ThisProperty:
+            Default: =(myFahrenheit - 32) * (5/9)
+    kToMiles(myK As Number):
+        myK:
+            Default: =100
+        ThisProperty:
+            Default: =myK/1.60934
+    milesToK(myMiles As Number):
+        myMiles:
+            Default: =100
+        ThisProperty:
+            Default: =1.60934*myMiles
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =0
+    Width: =0
+    X: =0
+    Y: =0
+    ZIndex: =3
+

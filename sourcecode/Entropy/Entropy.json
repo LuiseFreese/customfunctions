@@ -1,0 +1,60 @@
+{
+  "ComponentIndexes": {
+    "conversionFunctions": 3,
+    "dateFunctions": 1,
+    "regexFunctions": 2
+  },
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "conversionFunctions": 5,
+    "dateFunctions": 3,
+    "regexFunctions": 4,
+    "Screen 1": 6
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "12/11/2022 21:02:14",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {
+    "6b2835f8efe9482aaa280730dd55a3ee": 2,
+    "71cd4f6f318240f4ae6f4219a778fe0e": 1,
+    "9b78e72d59554616952f258b44b44a13": 0
+  },
+  "OrderComponentTemplate": {
+    "6b2835f8efe9482aaa280730dd55a3ee": 2,
+    "71cd4f6f318240f4ae6f4219a778fe0e": 1,
+    "9b78e72d59554616952f258b44b44a13": 0
+  },
+  "OrderDataSource": {},
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "conversionFunctions": 0,
+    "dateFunctions": 0,
+    "regexFunctions": 0,
+    "Screen 1": 0
+  },
+  "ResourcesJsonIndices": {},
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1120466,
+    "ControlCount": {
+      "6b2835f8efe9482aaa280730dd55a3ee": 1,
+      "71cd4f6f318240f4ae6f4219a778fe0e": 1,
+      "9b78e72d59554616952f258b44b44a13": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.86264149999999995,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}

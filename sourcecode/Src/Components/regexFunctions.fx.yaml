@@ -1,0 +1,73 @@
+regexFunctions As CanvasComponent:
+    isDecimal(myText As String):
+        myText:
+            Default: ="Text"
+        ThisProperty:
+            Default: |-
+                =If(
+                    IsMatch(
+                        myText,
+                        "^(\d)+(\.)\d+$"
+                    ),
+                    true,
+                    false
+                )
+    isEmail(myEmail As String):
+        myEmail:
+            Default: ="Text"
+        ThisProperty:
+            Default: |-
+                =If(
+                    IsMatch(
+                        myEmail,
+                        "^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                    ),
+                    true,
+                    false
+                )
+    isText(myText As String):
+        myText:
+            Default: ="Text"
+        ThisProperty:
+            Default: |-
+                =If(
+                    IsMatch(
+                        myText,
+                        "^[a-zA-Z_-\s]*$"
+                    ),
+                    true,
+                    false
+                )
+    isTime(myTime As String):
+        myTime:
+            Default: ="Text"
+        ThisProperty:
+            Default: |-
+                =If(
+                    IsMatch(
+                        myTime,
+                        "^(?:(?:([01]?\d|2[0-3]):)?([0-5]?\d):)?([0-5]?\d)$"
+                    ),
+                    true,
+                    false
+                )
+    isURL(myURL As String):
+        myURL:
+            Default: ="Text"
+        ThisProperty:
+            Default: |-
+                =If(
+                    IsMatch(
+                        myURL,
+                        "(?:(?=[\s`!()\[\]{};:'.,<>?«»“”‘’])|\b)((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/|[a-z0-9.\-]+[.](?:com|org|net))(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))*(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'.,<>?«»“”‘’]|\b))"
+                    ),
+                    true,
+                    false
+                )
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =0
+    Width: =0
+    X: =0
+    Y: =0
+    ZIndex: =2
+

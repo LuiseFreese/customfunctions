@@ -1,0 +1,84 @@
+dateFunctions As CanvasComponent:
+    countWeekdays(startDate As DateTime, endDate As DateTime):
+        startDate:
+            Default: =Now()
+        endDate:
+            Default: =Now()
+        ThisProperty:
+            Default: |-
+                =With(
+                    {
+                        cmpDateRange: ForAll(
+                            Sequence(endDate - startDate + 1),
+                            startDate + Value - 1
+                        )
+                    },
+                    If(
+                        And(
+                            IsBlank(startDate),
+                            IsBlank(endDate)
+                        ),
+                        0,
+                        // include only dates Monday (2) to Friday (6)
+                        CountIf(
+                            cmpDateRange,
+                            Weekday(Value) in [
+                                2,
+                                3,
+                                4,
+                                5,
+                                6
+                            ]
+                        )
+                    )
+                )
+    endOfMonth(startDate As DateTime, addMonths As Number):
+        startDate:
+            Default: =Now()
+        addMonths:
+            Default: =100
+        ThisProperty:
+            Default: =Now()
+    firstOfMonth(myDate As DateTime):
+        myDate:
+            Default: =Now()
+        ThisProperty:
+            Default: |-
+                =Date(
+                    Year(myDate),
+                    Month(myDate),
+                    1
+                )
+    getHalfyear(myDate As DateTime):
+        myDate:
+            Default: =Now()
+        ThisProperty:
+            Default: |-
+                =If(
+                    Month(myDate) <= 6,
+                    1 & "/" & Year(myDate),
+                    Month(myDate) >= 7,
+                    2 & "/" & Year(myDate)
+                )
+    getQuarter(myDate As DateTime):
+        myDate:
+            Default: =Now()
+        ThisProperty:
+            Default: |-
+                =If(
+                    Month(myDate) <= 3,
+                    1,
+                    Month(myDate) >= 4 && Month(myDate) <= 6,
+                    2,
+                    Month(myDate) >= 7 && Month(myDate) < 9,
+                    3,
+                    Month(myDate) >= 10,
+                    4
+                )
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =0
+    Width: =0
+    X: =0
+    Y: =0
+    ZIndex: =1
+
